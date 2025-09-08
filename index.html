@@ -37,4 +37,10 @@
             <p>Drawn by <a href="https://www.instagram.com/comababeyy/" target="_blank">Comababeyy</a> <a href="https://www.redbubble.com/de/people/gloomeykat/shop" target="_blank">(Redbubble)</a></p>
         </div>
     </body>
+    <script>
+        //Enforce HTTPS (https://stackoverflow.com/a/4723302)
+        if (location.host !== "127.0.0.1" && location.protocol !== 'https:' && location.protocol !== 'file:') {
+            location.replace(`https:${location.href.substring(location.protocol.length)}`);
+        }
+    </script>
 </html>
